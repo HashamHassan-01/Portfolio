@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:black;
+    color:white;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1.2rem 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: rgba(0,0,0,0.85);
+    z-index:1000;
+}
+
+.logo{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#b74b4b;
+}
+
+nav a{
+    margin-left:2rem;
+    font-size:1.5rem;
+    color:white;
+    text-decoration:none;
+    border-bottom:2px solid transparent;
+    transition:0.3s;
+}
+
+nav a.active,
+nav a:hover{
+    color:#b74b4b;
+    border-bottom:2px solid #b74b4b;
+}
+
+/* SECTIONS */
+section{
+    min-height:100vh;
+    padding:8rem 8%;
+    scroll-margin-top:90px;
+}
+
+/* HOME */
+.home{
+    display:flex;
+    align-items:center;
+    gap:3rem;
+}
+
+.home-img img{
+    width:250px;
+    border-radius:50%;
+    box-shadow:0 0 25px #b74b4b;
+}
+
+.home-content h1{
+    font-size:2.8rem;
+}
+
+.home-content h3{
+    font-size:1.8rem;
+    margin:0.5rem 0;
+}
+
+.home-content p{
+    font-size:1.2rem;
+    margin:1rem 0;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:0.8rem 2rem;
+    border:2px solid #b74b4b;
+    border-radius:30px;
+    color:#b74b4b;
+    text-decoration:none;
+    transition:0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:#b74b4b;
+    color:black;
+}
+
+/* SOCIAL ICONS */
+.social-icons a{
+    margin-right:1rem;
+    font-size:1.5rem;
+    color:#b74b4b;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+    background:#b74b4b;
+    padding:0.3rem;
+    border-radius:50%;
+}
+
+/* SECTION HEADINGS */
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#b74b4b;
+    margin-bottom:2rem;
+}
+
+/* CARDS */
+.card{
+    background:#161616;
+    padding:1.5rem;
+    margin:1rem auto;
+    max-width:700px;
+    border-left:4px solid #b74b4b;
+    border-radius:10px;
+}
+
+/* SKILLS */
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1rem;
+}
+
+.skills-container span{
+    padding:0.7rem 1.5rem;
+    border-radius:20px;
+    border:1px solid #b74b4b;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+    .home-img img{
+        margin-bottom:2rem;
+    }
+    nav{
+        flex-direction:column;
+        gap:1rem;
+    }
+}
